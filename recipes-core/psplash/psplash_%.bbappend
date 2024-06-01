@@ -28,7 +28,7 @@ def setPsplashColors(srcdir, BACKGROUND_COLOR, TEXT_COLOR, BAR_COLOR, BAR_BACKGR
 
 python do_display_banner() {
     bb.plain("***********************************************");
-    bb.plain("*                META-SPLASH                  *");
+    bb.plain("*         META-HELIOS-SPLASHSCREEN            *");
     bb.plain("*      Applying custom psplash image          *");
     bb.plain("***********************************************");    
 }
