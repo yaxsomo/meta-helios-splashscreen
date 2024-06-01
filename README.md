@@ -24,9 +24,11 @@ Please submit any patches against this layer to the maintainers for review!
 ### I. Adding the meta-helios-splashscreen Layer to Your Build
 
 1. Clone the `meta-helios-splashscreen` repository:
-   ```bash
-   git clone https://github.com/yaxsomo/meta-helios-splashscreen.git
-   ```
+
+```bash
+git clone https://github.com/yaxsomo/meta-helios-splashscreen.git
+```
+
 2. Add the path to `meta-helios-splashscreen` to the `poky/build/conf/bblayers.conf` file.
 
 ### II. Customization
@@ -39,14 +41,15 @@ Place the `logo.png` file in `meta-helios-splashscreen/recipes-core/psplash/file
 Customize the splash screen colors in `meta-helios-splashscreen/recipes-core/psplash/customize.bb` file. 
 The following psplash variables can be modified:
 
-BACKGROUND_COLOR
-TEXT_COLOR
-BAR_COLOR
-BAR_BACKGROUND_COLOR
+- BACKGROUND_COLOR
+- TEXT_COLOR
+- BAR_COLOR
+- BAR_BACKGROUND_COLOR
+
 ### III. Bake the Recipe
 
-      - Run the following command to bitbake your image :
+- Run the following command to bitbake your image :
     
-    ```bash
-    bitbake your-image
-    ```
+```bash
+bitbake your-image
+```
