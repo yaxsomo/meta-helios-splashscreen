@@ -13,7 +13,13 @@ Please refer to the sections below for more details.
 ## Dependencies
 
 - **URI**: `git://git.yoctoproject.org/poky`
-- **Compatible branches**: `scarthgap`, `nanbield`, `langdale`, `kirkstone`, `dunfell`, `mickledore`
+- **Compatible branches**: 
+    - `scarthgap` 
+    - `nanbield` 
+    - `langdale` 
+    - `kirkstone` 
+    - `dunfell` 
+    - `mickledore`
 
 ## Patches
 
