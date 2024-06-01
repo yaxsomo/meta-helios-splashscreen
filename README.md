@@ -1,44 +1,52 @@
-This README file contains information on the contents of the meta-helios-splashscreen layer.
+# meta-helios-splashscreen
 
-meta-helios-splashscreen layes allows customization of pshlash colors and image of our custom Operating System.
+This README file provides information about the `meta-helios-splashscreen` layer.
 
-Please see the corresponding sections below for details.
+The `meta-helios-splashscreen` layer allows customization of splash screen colors and images for our custom Operating System.
 
-Dependencies
-============
+Please refer to the sections below for more details.
 
-  URI: git://git.yoctoproject.org/poky
-  compatible branches: scarthgap | nanbield | langdale | kirkstone | dunfell | mickledore
+## Dependencies
 
+- **URI**: `git://git.yoctoproject.org/poky`
+- **Compatible branches**: `scarthgap`, `nanbield`, `langdale`, `kirkstone`, `dunfell`, `mickledore`
 
-Patches
-=======
+## Patches
 
-Please submit any patches against this layer to me for review!
+Please submit any patches against this layer to the maintainers for review!
 
-Maintainers: Yassine DEHHANI <yassine.dehhani@ynov.com> | Emile BAILEY <emile.bailey@ynov.com>
+**Maintainers**:
+- Yassine DEHHANI <yassine.dehhani@ynov.com>
+- Emile BAILEY <emile.bailey@ynov.com>
 
+## How It's Done
 
+### I. Adding the meta-helios-splashscreen Layer to Your Build
 
-How it's done
-=================
+1. Clone the `meta-helios-splashscreen` repository:
+   ```bash
+   git clone https://github.com/yaxsomo/meta-helios-splashscreen.git
+   ```
+2. Add the path to `meta-helios-splashscreen` to the `poky/build/conf/bblayers.conf` file.
 
-  I. Adding the meta-helios-splashscreen layer to your build
-    1. Clone meta-helios-splashscreen by running `git clone https://github.com/yaxsomo/meta-helios-splashscreen.git`
-    2. Run 'path/to/meta-helios-splashscreen' to the to poky/build/conf/bblayers.conf file.
+### II. Customization
 
-  II. Customization
-    - Logo image customization
-      1. Rename your logo image to logo.png
-      2. Place the logo.png file in `meta-helios-splashscreen/recipes-core/psplash/files`
+#### Logo Customization
+Rename your logo image to logo.png.
+Place the `logo.png` file in `meta-helios-splashscreen/recipes-core/psplash/files`.
 
-    - Color customization
-      1. Customize the splash scereen colors in `meta-helios-splashscreen/recipes-core/psplash/customize.bb`
-      The following pspash variables can be modified
-        - BACKGROUND_COLOR
-        - TEXT_COLOR
-        - BAR_COLOR
-        - BAR_BACKGROUND_COLOR
+#### Color Customization
+Customize the splash screen colors in `meta-helios-splashscreen/recipes-core/psplash/customize.bb` file. 
+The following psplash variables can be modified:
 
-  III. Bake the recipe
-      - Run `bitbake your-image`
+BACKGROUND_COLOR
+TEXT_COLOR
+BAR_COLOR
+BAR_BACKGROUND_COLOR
+### III. Bake the Recipe
+
+      - Run the following command to bitbake your image :
+    
+    ```bash
+    bitbake your-image
+    ```
