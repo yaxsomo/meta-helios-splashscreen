@@ -1,5 +1,5 @@
-# meta-helios-splashscreen
-
+![meta-helios-splashscreen logo](https://github.com/yaxsomo/meta-helios-splashscreen/assets/71334330/ec6dd976-45ce-4c1f-83a9-f6af8dd55fa8)
+#
 This README file provides information about the `meta-helios-splashscreen` layer.
 
 The `meta-helios-splashscreen` layer allows customization of splash screen colors and images for our custom Operating System.
